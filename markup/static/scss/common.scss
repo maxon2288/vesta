@@ -1,0 +1,294 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+body{
+    font-family: "opensans";
+}
+
+.wrapper{
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.m-img-cont{
+    background-size: cover;
+    background-position: center center;
+    img{
+        display: none;
+    }
+}
+
+
+.new{
+    &_partner{
+        margin: 30px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__pretitle{
+            font-family: 'opensansEB';
+            font-size: 24px;
+            color: rgb(67, 67, 67);
+            line-height: 1;
+        }
+        &__img-cont{
+            height: 210px;
+            position: relative;
+            cursor: pointer;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #000;
+                opacity: 0;
+                transition: 0.3s;
+            }
+            
+        }
+        &__items{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+        &__title{
+            font-size: 18px;
+            font-family: "opensansSB";
+        }
+        &__desc{
+            font-size: 16px;
+            font-family: "opensans";
+            color: rgb(53, 53, 53);
+            margin-top: 5px;    
+        }
+
+        &__addy{
+            font-size: 14px;
+            font-family: "opensans";
+            color: rgb(81, 81, 81);
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+        }
+        &__item{
+            width: 48.9%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            background-color: #f1f1f1;
+            margin-bottom: 30px;
+            @media screen and(max-width: 600px) {
+                width: 100%;
+            }
+            &:hover{
+                .new_partner__img-cont:before{
+                    opacity: 0.4;
+
+                }
+            }
+        }
+        &__percent{
+            font-size: 16px;
+            font-family: "opensansSB";
+            color: rgb(255, 255, 255);
+            position: absolute;
+            z-index: 100;
+            right: 40px;
+            top: -1px;
+            padding: 20px 10px;
+            background-color: rgb(244, 144, 144);
+            box-shadow: 0.174px 4.997px 6.58px 0.42px rgba(78, 78, 78, 0.26);
+            
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            padding: 30px; 
+        }
+    }
+}
+
+.new-ad {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &__content{
+        display: flex;
+        @media screen and(max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__left{
+        max-width: 570px;
+        width: 100%;
+        min-height: 375px;
+        height: 100%;
+        display: flex;
+        margin-right: 30px;
+        @media screen and(max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+    &__right{
+        max-width: 570px
+    }
+    &__title{
+        font-size: 30px;
+        font-family: "Open Sans";
+        margin-top: 20px;
+        color: rgb(244, 144, 144);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        font-size: 16px;
+        color: rgb(67, 67, 67);
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 10px 0
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        @media screen and(max-width: 425px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__info-left{
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(81, 81, 81);
+        line-height: 1.429;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: 10px;
+        }
+          
+    }
+
+    &__info-right{
+        font-size: 14px;
+        font-family: "Open Sans";
+        color: rgb(81, 81, 81);
+        span{
+            font-size: 14px;
+            font-family: "Open Sans";
+            color: rgb(81, 81, 81);
+            font-weight: bold;
+            margin-right: 15px;
+        }
+          
+    }
+
+}
+
+.new__button-container{
+    display: flex;
+    margin-top: auto;
+}
+
+.new-calc-desc{
+    color: #ff5549;
+}
+
+.s_calc__input {
+    width: 100%;
+}
+
+.s_calc__fields_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-twin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    &__title{
+        font-size: 24px;
+        font-family: "Raleway";
+        color: rgb(53, 53, 53);
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 48.7%;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        @media screen and(max-width: 700px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    &__top{
+        height: 210px;
+        width: 100%;
+        position: relative;
+    }
+    &__price{
+        background-color: rgb(244, 144, 144);
+        box-shadow: 0.174px 4.997px 6.58px 0.42px rgba(78, 78, 78, 0.26);
+        position: absolute;
+        top: -1px;
+        right: 40px;
+        min-width: 150px;
+        padding: 20px 20px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &__content{
+        padding: 30px
+    }
+    &__content-title{
+            font-size: 18px;
+            font-family: "Open Sans";
+            color: rgb(53, 53, 53);
+            font-weight: bold;
+    }
+    &__content-desc{
+            font-size: 16px;
+            font-family: "Open Sans";
+            margin-top: 5px;
+            color: rgb(53, 53, 53);
+    }
+}

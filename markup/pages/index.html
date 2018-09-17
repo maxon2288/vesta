@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <a href="ad.html">вторая страница</a>
+
+
+        <div class="new_partner">
+            <div class="wrapper">
+                <div class="new_partner__pretitle">
+                        Список партнёров ПК ВЕСТА ГЛОБАЛ
+                </div>
+
+                <div class="new_partner__items">
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                    {{> item/item}}
+                </div>
+
+
+            </div>
+        </div>
+        
+
+        <footer class="page__footer">
+            {{> footer/footer}}
+        </footer>
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
