@@ -1,0 +1,337 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <div class="container">
+
+
+            <div class="new-row">
+                <h1 class="g_h1">Доска объявлений</h1>
+                <button type="submit"><span class="g_btn newPopup"><span>разместить объявление</span><small><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M10 8L7.8 10.3 7.8 10.3 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0 7.8 5.7 7.8 5.7 10 8Z" fill="rgb(255, 255, 255)"></path></svg></small></span></button>
+
+            </div>
+
+            <div class="new-board">
+                <div class="new-board__buttons">
+                    <div class="new-board__button-cont">
+                        <a href="#" class="new-board__button">
+                            все
+                        </a>
+                    </div>
+
+                    <div class="new-board__button-cont">
+                        <a href="#" class="new-board__button active">
+                            квартиры
+                        </a>
+                    </div>
+
+                    <div class="new-board__button-cont">
+                        <a href="#" class="new-board__button">
+                            дома
+                        </a>
+                    </div>
+
+                    <div class="new-board__button-cont">
+                        <a href="#" class="new-board__button">
+                            земельные участки
+                        </a>
+                    </div>
+
+                    <div class="new-board__button-cont">
+                        <a href="#" class="new-board__button">
+                            договора пайнакопления
+                        </a>
+                    </div>
+                </div>
+
+                <div class="new-board__selects">
+                    <select class="new-board-select">
+                        <option  value="5">продажа</option>
+                        <option value="1">Some option</option>
+                        <option value="2">Another option</option>
+                        <option value="3" disabled>A disabled option</option>
+                        <option value="4">Potato</option>
+                      </select>
+
+                      <select class="new-board-select">
+                        <option  value="5">павлодар</option>
+                        <option value="1">Some option</option>
+                        <option value="2">Another option</option>
+                        <option value="3" disabled>A disabled option</option>
+                        <option value="4">Potato</option>
+                      </select>
+
+                      <select class="new-board-select">
+                        <option  value="5">Кол-во комнат</option>
+                        <option value="1">Some option</option>
+                        <option value="2">Another option</option>
+                        <option value="3" disabled>A disabled option</option>
+                        <option value="4">Potato</option>
+                      </select>
+
+                      <select class="new-board-select">
+                        <option  value="5">цена</option>
+                        <option value="1">Some option</option>
+                        <option value="2">Another option</option>
+                        <option value="3" disabled>A disabled option</option>
+                        <option value="4">Potato</option>
+                      </select>
+                    </div>
+
+                <div class="new-board__content">
+                    <div class="new-twin__items">
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                        <div class="new-twin__item">
+                            <a href="#" class="new-twin__top m-img-cont">
+                                <img src="%=static=%img/content/ad-1.jpg" alt="">
+                                <div class="new-twin__price">
+                                    1 500 000 тг
+                                </div>
+                            </a>
+    
+                            <div class="new-twin__content">
+                                <a href="#" class="new-twin__content-title">
+                                    Квартира на Набережной 
+                                </a>
+    
+                                <div class="new-twin__content-desc">
+                                    Небольшое описание о том какая эта квартира 
+                                    красивая, большая, светлая. Самое важное чтобы 
+                                    человек понимал, что ему важно в этой жизни.
+                                </div>
+    
+                                <div class="new-ad__info">
+                                    <div class="new-ad__info-left">{{Icon iconName="mark"}} г.Павлодар</div>
+                                    <div class="new-ad__info-right"> <span>Кол-во комнат:</span>3 комнаты</div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="new-overlay">
+                <div class="new-ad-popup">
+                    <a href="#" class="new-ad-popup-close">
+                        {{Icon iconName="new-close"}}
+                    </a>
+    
+                    <form action="/" class="form-ad">
+                        
+                        <h1 class="g_h1">разместить объявление</h1>
+            
+
+                        <div class="form-ad__row">
+                            <select class="new-board-select">
+                                <option  value="5">продажа</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">Potato</option>
+                            </select>
+                
+                            <select class="new-board-select">
+                                <option  value="5">продажа</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">Potato</option>
+                            </select>
+                        </div>
+
+                        <input type="text" name="name" placeholder="Ваше имя" class="g_input">
+
+
+            
+                        <textarea name="textarea" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+                        
+
+                        <div class="form-ad__row">
+                            <select class="new-board-select">
+                                <option value="5">Кол-во комнат</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Another option</option>
+                                <option value="3" disabled>A disabled option</option>
+                                <option value="4">Potato</option>
+                            </select>
+                            <input type="text" name="name" placeholder="Ваше имя" class="g_input">
+                        </div>
+
+                        <label class='__lk-fileInput'>
+                            <span data-default='добавить фото'>добавить фото</span>
+                            <input type="file">
+                            <img src="%=static=%img/content/new-plus.png" alt="">
+
+                        </label>
+
+                        <button type="submit"><span class="g_btn newPopup">
+                            <span>разместить объявление</span>
+                                <small><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M10 8L7.8 10.3 7.8 10.3 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0 7.8 5.7 7.8 5.7 10 8Z" fill="rgb(255, 255, 255)"></path></svg></small>
+                            </span>
+                        </button>
+            
+            
+                        
+                    </form>
+            
+                </div>
+        </div>
+        
+
+            
+        
+
+            
+    
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

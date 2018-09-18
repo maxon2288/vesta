@@ -5,12 +5,10 @@ html, body {
 }
 
 .page__wrapper {
-    min-height: 100%;
     margin-bottom: -50px;
 }
 
 * html .page__wrapper {
-    height: 100%;
 }
 
 body{
@@ -132,6 +130,224 @@ body{
     }
 }
 
+.new-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.new-ad-popup{
+    display: flex;
+    flex-direction: column; 
+    background-color: #fff;
+    max-width: 585px;
+    width: 100%;
+    padding: 55px 40px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    margin-bottom: 40px;    
+    &.visible{
+        visibility: visible;
+        opacity: 1;
+    }
+    @media screen and(max-width: 1024px) {
+        max-width: 70%;
+        
+    }
+    @media screen and(max-width: 768px) {
+        max-width: 90%;
+        padding: 10px;
+    }
+    @media screen and(max-width: 425px) {
+        max-width: 96%;
+    }
+}
+
+.new-ad-popup-close{
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    &:hover{
+        transform: rotate(90deg);
+    }
+    @media screen and(max-width: 768px) {
+        right: 0;
+    }
+}
+
+.new-popup__container{
+    position: relative;
+}
+
+.new-overlay{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+    transition: 0.3s;
+    max-height: 100vh;
+    &.visible{
+        visibility: visible;
+        opacity: 1 ;
+    }
+    
+}
+
+.form-ad{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        &:before{
+            display: none;
+        }
+    }
+    input{
+        height: 50px;
+        max-width: 100%;
+        width: 100%;
+        font-family: "opensans";
+        margin-bottom: 10px;
+        &::placeholder{
+            color: #333333;
+        }
+    }
+    textarea{
+        width: 100%;
+        border-radius: 22px;
+        border: 2px solid #e8e8e8;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 170px;
+        min-height: 170px;
+        padding: 30px;
+        margin-bottom: 10px; 
+        &::placeholder{
+            text-transform: uppercase;
+            font-family: 'opensans';
+            font-size: 12px;
+            font-weight: bold;
+            color: #333333; 
+        }
+    }
+    &__row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .new-board-select{
+            width: 48%;
+            margin-bottom: 10px;
+            @media screen and(max-width: 605px) {
+                width: 100%;
+            }
+        }
+        
+        input{
+            width: 48%;
+            @media screen and(max-width: 605px) {
+                width: 100%;
+            }
+        }
+
+        
+    }
+
+    .__lk-fileInput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        input{
+            max-width: auto;
+            width: auto;
+            display: inline-flex;
+            height: auto;
+            margin-bottom: 0;
+            background-color: transparent;
+            color: #7d99ff;
+            display: none;
+        }
+        span {
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            margin-right: 10px;            
+            color: #7d99ff;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+.new-board{
+    margin-top: 60px;
+    margin-bottom: 40px;    
+    &__selects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__button{
+        padding: 0 45px;
+        height: 55px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        transition: 0.3s;
+        color: white;
+        font-family: 'raleEB';
+        font-size: 16px;
+        color: rgb(53, 53, 53);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &:hover{
+            background-color: #f77373;
+            color: #fff;
+        }
+        &.active{
+            background-color: #f77373;
+            color: #fff;
+        }
+    }
+    
+}
+
 .new-ad {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -154,7 +370,9 @@ body{
         }
     }
     &__right{
-        max-width: 570px
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
     }
     &__title{
         font-size: 30px;
@@ -175,6 +393,7 @@ body{
         display: flex;
         align-items: center;
         margin-top: 25px;
+        margin-bottom: 10px;
         @media screen and(max-width: 425px) {
             flex-direction: column;
             align-items: flex-start;
@@ -237,6 +456,7 @@ body{
         font-size: 24px;
         font-family: "Raleway";
         color: rgb(53, 53, 53);
+        
     }
     &__items{
         display: flex;
@@ -248,6 +468,7 @@ body{
         width: 48.7%;
         background-color: #f1f1f1;
         display: flex;
+        margin-bottom: 30px;
         flex-direction: column;
         @media screen and(max-width: 700px) {
             width: 100%;
@@ -258,6 +479,10 @@ body{
         height: 210px;
         width: 100%;
         position: relative;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.8;
+        }
     }
     &__price{
         background-color: rgb(244, 144, 144);
@@ -283,12 +508,17 @@ body{
             font-size: 18px;
             font-family: "Open Sans";
             color: rgb(53, 53, 53);
+            letter-spacing: 1px;
             font-weight: bold;
+            &:hover{
+                text-decoration: underline;
+            }
     }
     &__content-desc{
             font-size: 16px;
             font-family: "Open Sans";
             margin-top: 5px;
             color: rgb(53, 53, 53);
+            letter-spacing: 1px;
     }
 }

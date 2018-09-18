@@ -28,3 +28,23 @@
     font-style: normal;     // Also could has another value
 }
 
+@font-face {
+    font-family: 'raleEB';
+    src: url('../fonts/raleway-extrabold.eot');
+    src: url('../fonts/raleway-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold.woff') format('woff'),
+         url('../fonts/raleway-extrabold.svg#custom_font') format('svg');
+    font-weight: 900;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
+@font-face {
+    font-family: 'raleB';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.svg#custom_font') format('svg');
+    font-weight: 900;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+}
+
